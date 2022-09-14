@@ -4,8 +4,11 @@ where year_of_release_album between '01-01-2018' and '31-12-2018';
 select name_track, duration from tracks 
 order by duration desc;
 
-select duration from tracks 
-where duration > 3.5;
+select name_track, duration 
+from tracks 
+where  duration >= 3.5
+order by duration desc 
+limit 1;
 
 
 select name_digest from digests 
